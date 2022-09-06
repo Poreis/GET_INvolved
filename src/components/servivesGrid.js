@@ -56,12 +56,10 @@ function ServicesGrid(props){
               { name: 'threethree', start: [2, 2], end: [2, 2] },
               { name: 'threefour', start: [3, 2], end: [3, 2] },
               { name: 'threefive', start: [4, 2], end: [4, 2] },
-              { name: 'fourone', start: [0, 3], end: [0, 3] },
-              { name: 'fourtwo', start: [1, 3], end: [1, 3] },
 
             ]}
             columns={['1/5', '1/5', '1/5','1/5','1/5']}
-            rows={['1/4','1/4','1/4','1/4']}
+            rows={['1/3','1/3','1/3']}
             gap="medium"
             pad={{left:'large',right:'large',top:'large',bottom:'large'}}
             alignSelf='center'
@@ -113,7 +111,7 @@ function ServicesGrid(props){
             <Image fill={true} fit='cover' src={require("../assets/service6.png")} />
             </CardBody>
             <CardHeader>
-                <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Guest/Scholarship/<br/>Employment contract</Paragraph>
+                <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Guest/Scholarship/<br/>Contract issues</Paragraph>
             </CardHeader>
         </Card>
         <Card align='center' alignSelf='center'  gridArea='twotwo' width='small' height='small'>
@@ -137,7 +135,7 @@ function ServicesGrid(props){
             <Image fill={true} fit='cover' src={require("../assets/service9.png")} />
             </CardBody>
             <CardHeader>
-                <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Passaport/Visa issues</Paragraph>
+                <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Passport/Visa issues</Paragraph>
             </CardHeader>
         </Card>
         <Card align='center' alignSelf='center'  gridArea='twofive' width='small' height='small'>
@@ -158,21 +156,13 @@ function ServicesGrid(props){
         </Card>
         <Card align='center' alignSelf='center'  gridArea='threetwo' width='small' height='small'>
             <CardBody >
-            <Image fill={true} fit='cover' src={require("../assets/service12.png")} />
-            </CardBody>
-            <CardHeader>
-                <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>...</Paragraph>
-            </CardHeader>
-        </Card>
-        <Card align='center' alignSelf='center'  gridArea='threethree' width='small' height='small'>
-            <CardBody >
             <Image fill={true} fit='cover' src={require("../assets/service13.png")} />
             </CardBody>
             <CardHeader>
                 <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Social engagement</Paragraph>
             </CardHeader>
         </Card>
-        <Card align='center' alignSelf='center'  gridArea='threefour' width='small' height='small'>
+        <Card align='center' alignSelf='center'  gridArea='threethree' width='small' height='small'>
             <CardBody >
             <Image fill={true} fit='cover' src={require("../assets/service14.png")} />
             </CardBody>
@@ -180,7 +170,7 @@ function ServicesGrid(props){
                 <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Questions and consultations</Paragraph>
             </CardHeader>
         </Card>
-        <Card align='center' alignSelf='center'  gridArea='threefive' width='small' height='small'>
+        <Card align='center' alignSelf='center'  gridArea='threefour' width='small' height='small'>
             <CardBody >
             <Image fill={true} fit='cover' src={require("../assets/service15.png")} />
             </CardBody>
@@ -188,15 +178,7 @@ function ServicesGrid(props){
                 <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Video meetings to support and get feedback</Paragraph>
             </CardHeader>
         </Card>
-        <Card align='center' alignSelf='center'  gridArea='fourone' width='small' height='small'>
-            <CardBody >
-            <Image fill={true} fit='cover' src={require("../assets/service16.png")} />
-            </CardBody>
-            <CardHeader>
-                <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Communication</Paragraph>
-            </CardHeader>
-        </Card>
-        <Card align='center' alignSelf='center'  gridArea='fourtwo' width='small' height='small'>
+        <Card align='center' alignSelf='center'  gridArea='threefive' width='small' height='small'>
             <CardBody >
             <Image fill={true} fit='cover' src={require("../assets/service17.png")} />
             </CardBody>
@@ -254,7 +236,7 @@ function ServicesGrid(props){
             <Image fill={true} fit='cover' src={require("../assets/service6.png")} />
             </CardBody>
             <CardHeader>
-                <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Guest/Scholarship/<br/>Employment contract</Paragraph>
+                <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Guest/Scholarship/<br/>Contract issues</Paragraph>
             </CardHeader>
         </Card>
         <Card align='center' alignSelf='center'  gridArea='twotwo' width='small' height='small'>
@@ -278,7 +260,7 @@ function ServicesGrid(props){
             <Image fill={true} fit='cover' src={require("../assets/service9.png")} />
             </CardBody>
             <CardHeader>
-                <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Passaport/Visa issues</Paragraph>
+                <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Passport/Visa issues</Paragraph>
             </CardHeader>
         </Card>
         <Card align='center' alignSelf='center'  gridArea='twofive' width='small' height='small'>
@@ -331,18 +313,18 @@ function ServicesGrid(props){
         </Card>
         <Card align='center' alignSelf='center'  gridArea='fourone' width='small' height='small'>
             <CardBody >
-            <Image fill={true} fit='cover' src={require("../assets/service16.png")} />
-            </CardBody>
-            <CardHeader>
-                <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Communication</Paragraph>
-            </CardHeader>
-        </Card>
-        <Card align='center' alignSelf='center'  gridArea='fourtwo' width='small' height='small'>
-            <CardBody >
             <Image fill={true} fit='cover' src={require("../assets/service17.png")} />
             </CardBody>
             <CardHeader>
                 <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Introduction to Germany and culture</Paragraph>
+            </CardHeader>
+        </Card>
+        <Card align='center' alignSelf='center'  gridArea='fourtwo' width='small' height='small'>
+            <CardBody >
+            <Image fill={true} fit='cover' src={require("../assets/service16.png")} />
+            </CardBody>
+            <CardHeader>
+                <Paragraph style={{fontWeight:'bold', textAlign:'center'}} color='brand'>Communication</Paragraph>
             </CardHeader>
         </Card>
         <br/>

@@ -74,15 +74,20 @@ function TeamPage(){
             <Bar/>
             <Box style={{minHeight:window.innerHeight*0.9+'px'}} background="background" fill >
             <Heading level='1' alignSelf='center'>Meet the Team</Heading>
+            <Box  style={{marginBottom:'100px',marginTop:'50px'}} flex='grow' direction='column' gap='medium' >
             <Grid
             areas={[
               { name: 'one', start: [0, 0], end: [0, 0] },
               { name: 'two', start: [1, 0], end: [1, 0] },
               { name: 'three', start: [2, 0], end: [2, 0] },
               { name: 'four', start: [3, 0], end: [3, 0] },
+              { name: 'five', start: [1, 1], end: [1, 1] },
+              { name: 'six', start: [2, 1], end: [2, 1] },
+              { name: 'seven', start: [1, 2], end: [2, 2] },
+
             ]}
             columns={['1/5', '1/5','1/5','1/5']}
-            rows={['fill']}
+            rows={['1/3','1/3','1/3']}
             pad={{left:'small',right:'small',top:'none',bottom:'small'}}
             alignSelf='center'
             align='center'
@@ -129,9 +134,41 @@ function TeamPage(){
           }}></Image>
             <Heading alignSelf='center' color='brand' style={{textAlign:'center'}} level='3'>Friederike Holfeld<br/><i>Working Student</i></Heading>
             </Box> 
+            <Box gridArea='five' background='white' round>
+            <Image fit='cover' src={require("../assets/Pradeep.jpeg")}  style={{
+            borderTopLeftRadius: "23px",
+            borderTopRightRadius: "23px",
+            maxHeight:window.innerHeight*0.5,
+            maxWidth:window.innerWidth*0.25
+                      }}></Image>
+            <Heading alignSelf='center' color='brand' style={{textAlign:'center'}} level='3'>Pedro Gouveia<br/><i>Project Associate</i></Heading>
+            </Box> 
+            <Box gridArea='six' background='white' round>
+            <Image fit='cover' src={require("../assets/Frieda.jpeg")}  style={{
+            borderTopLeftRadius: "23px",
+            borderTopRightRadius: "23px",
+            maxHeight:window.innerHeight*0.5,
+            maxWidth:window.innerWidth*0.25
+          }}></Image>
+            <Heading alignSelf='center' color='brand' style={{textAlign:'center'}} level='3'>Elena Lopez<br/><i>Project Associate</i></Heading>
+            </Box> 
+            <Box alignSelf='center' gridArea='seven' style={{
+            maxWidth:window.innerWidth*0.25,
+            marginLeft:'200px',
+            marginRight:'200px',
+          }} background='white' round>
+            <Image fit='cover' src={require("../assets/Frieda.jpeg")}  style={{
+            borderTopLeftRadius: "23px",
+            borderTopRightRadius: "23px",
+            maxHeight:window.innerHeight*0.5,
+            maxWidth:window.innerWidth*0.25
+          }}></Image>
+            <Heading alignSelf='center' color='brand' style={{textAlign:'center'}} level='3'>Luis<br/><i>School Intern</i></Heading>
+            </Box> 
             </Grid>
             </Box>
             <EndBar/>
+            </Box>
             </Grommet>
         );
         else
@@ -164,12 +201,26 @@ function TeamPage(){
             <Heading alignSelf='center' color='brand' style={{textAlign:'center'}} level='3'>Sabrina Schulte<br/><i>Working Student</i></Heading>
             </Box> 
             <Box alignSelf='center' background='white' round fill='vertical' >
-            <Image fit='cover' alignSelf='center' src={require("../assets/Frieda.jpeg")}  style={{
-             maxHeight:window.innerHeight*0.5,
-             marginTop:'5px'
+            <Image fit='cover' alignSelf='center' src={require("../assets/Pradeep.jpeg")}  style={{
+            maxHeight:window.innerHeight*0.5,
+            marginTop:'5px'
           }}></Image>
-            <Heading alignSelf='center' color='brand' style={{textAlign:'center'}} level='3'>Friederike Holfeld<br/><i>Working Student</i></Heading>
-            </Box>
+            <Heading alignSelf='center' color='brand' style={{textAlign:'center'}} level='3'>Pedro Gouveia<br/><i>Project Associate</i></Heading>
+            </Box> 
+            <Box alignSelf='center' background='white' round fill='vertical' >
+            <Image fit='cover' alignSelf='center' src={require("../assets/Pradeep.jpeg")}  style={{
+            maxHeight:window.innerHeight*0.5,
+            marginTop:'5px'
+          }}></Image>
+            <Heading alignSelf='center' color='brand' style={{textAlign:'center'}} level='3'>Elena Lopez<br/><i>Project Associate</i></Heading>
+            </Box> 
+            <Box alignSelf='center' background='white' round fill='vertical' >
+            <Image fit='cover' alignSelf='center' src={require("../assets/Pradeep.jpeg")}  style={{
+            maxHeight:window.innerHeight*0.5,
+            marginTop:'5px'
+          }}></Image>
+            <Heading alignSelf='center' color='brand' style={{textAlign:'center'}} level='3'>Luis<br/><i>School Intern</i></Heading>
+            </Box> 
             </Box>
                    <EndBar/> 
             </Box>
