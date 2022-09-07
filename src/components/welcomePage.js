@@ -165,7 +165,7 @@ function WelcomePage(props) {
               <Anchor
                 size={getSecAnchorSize(size)}
                 color="white"
-                label="Notable Remarks"
+                label="Key Numbers"
               />
               <Anchor
                 size={getSecAnchorSize(size)}

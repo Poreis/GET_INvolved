@@ -76,7 +76,7 @@ function PatnerPage(){
         return(
             <Grommet id='scroller' style={{overflowY:'scroll'}} theme={theme} full>
             <Bar/>
-            <Box style={{minHeight:window.innerHeight*0.9+'px'}} background="background" flex='grow' >
+            <Box style={{minHeight:window.innerHeight*0.9+'px'}} background="background" flex='grow'>
             {
                 mobileCheck() ? 
                 <Heading level='1' color='brand'  margin={{left:'medium',right:'medium'}}>GET_INvolved – become a Partner</Heading>      
@@ -89,7 +89,7 @@ function PatnerPage(){
             <Text color='brand' margin={{left:'medium',right:'medium'}}>This dedicated cooperation under the GET_INvolved umbrella programme is usually based on a bilateral or multilateral agreement between FAIR and GSI on one hand and the institute or university on the other hand which regulates the financial arrangements for scholarships.</Text>      
             <br/>
             <Heading level='3' color='brand' margin={{left:'medium'}}>GET_INvolved Partners so far:</Heading>
-            <Box height="small" width="fill" overflow="hidden" margin={{left:'medium',right:'medium'}}>
+            <Box  alignSelf='stretch' alignContent='end' height="small" width="fill"  overflow="hidden" margin={{left:'medium',right:'medium'}}>
             <Carousel controls='arrows' fill play='4500'          background='white'>
             <Grid
             areas={[
@@ -332,13 +332,13 @@ function PatnerPage(){
                 <Image gridArea='four' fill={true} fit='cover' src={require("../assets/c74.png")} ></Image>
             </Grid>
             </Carousel>
-            </Box>  
+            </Box>     
             <br/>   
             {mobileCheck()?
             <br/>
             :
             <Button
-            size='small'
+            size='medium'
             label='Become a partner'
             primary={true}
             color="white"
@@ -347,9 +347,10 @@ function PatnerPage(){
             onClick={scrollToInfo}
             icon={<Down color="brand" size='small' />}
             className='transparentImage'
+            margin={{bottom:'medium'}}
             reverse
           ></Button> 
-             }      
+             }   
             </Box>
             <Box style={{minHeight:window.innerHeight*0.45+'px'}} background="background" flex='grow' >
             <Accordion margin={{left:'medium',right:'medium'}}>

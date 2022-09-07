@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grommet,Box, Heading, Button, Grid} from  'grommet';
+import {Grommet,Box, Heading, Button, Grid,Distribution,Text} from  'grommet';
 import {Bar} from './AppBar'
 import {EndBar} from './EndBar'
 import { WhoCanParticipateGrid } from './whoCanParticipateGrid';
@@ -54,24 +54,24 @@ function RemarksPage(){
             <Grommet style={{overflowY:'scroll'}} theme={theme} full>
             <Bar/>
             <Box style={{minHeight:window.innerHeight*0.9+'px'}} background="background" fill >
-            <Heading level='1' olor='brand' margin={{left:'medium'}}>Notable Remarks</Heading>
-            <Grid
-            areas={[
-              { name: 'one', start: [0, 0], end: [0, 0] },
-              { name: 'two', start: [1, 0], end: [1, 0] },
-              { name: 'three', start: [2, 0], end: [2, 0] },
-              { name: 'four', start: [3, 0], end: [3, 0] },
-            ]}
-            columns={['1/4', '1/4','1/4','1/4']}
-            rows={['fill']}
-            pad={{left:'small',right:'small',top:'small',bottom:'small'}}
-            alignSelf='center'
-            align='center'
-            alignContent="center"
-            fill
-          >
+            <Heading level='1' olor='brand' margin={{left:'medium'}}>Key Numbers</Heading>
+            <Distribution
+            margin='medium'
+          values={[
+            { value: 50, color: 'light-3' },
+            { value: 30, color: 'brand' },
+            { value: 20, color: 'graph-0' },
+            { value: 10, color: 'light-3' },
+            { value: 5, color: 'brand' },
+          ]}
+        >
+          {value => (
+            <Box pad="small" background={value.color} fill>
+              <Text size="large">{value.value}</Text>
+            </Box>
+          )}
+        </Distribution>
                
-            </Grid>
             </Box>
             <EndBar/>
             </Grommet>
